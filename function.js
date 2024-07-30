@@ -138,3 +138,33 @@ console.log(
 // A 17-year-old member should get a 15% discount (10% + 5%).
 // A 70-year-old non-member should get a 15% discount.
 // A 70-year-old member should get a 20% discount (15% + 5%).
+
+// Types of functions
+
+// 1. Funtion Expression
+
+let sayMyName = function () {
+  console.log(this);
+  console.log("Welcome Here!!!");
+};
+
+sayMyName();
+
+// 2. Arrow function
+
+// this
+const sayName = (name) => {
+  console.log(this);
+  console.log("Welcome Mr. Lagbaja");
+  console.log("Your name is ", name);
+};
+
+sayName("Bolarinwa");
+
+// Rest parameter in js
+const sayNames = (greeting, department, ...names) => {
+  console.log(greeting, department, names);
+  // console.log(names);
+};
+
+sayNames("Hello", "Science", "Saheed", "Pasuma", "taiye Currency", "K1");
